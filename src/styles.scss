@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+.modal-backdrop {
+  z-index: 1040 !important;
+}
+
+.modal {
+  z-index: 1050 !important;
+  display: block !important;
+}
+
+body.modal-open {
+  overflow: hidden !important;
+}
+
+/* Si hay conflictos con layout que tape el modal, puedes ajustar esto: */
+.main-content,
+.page-wrapper {
+  position: relative;
+  z-index: auto;
+}
